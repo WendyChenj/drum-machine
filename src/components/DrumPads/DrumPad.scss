@@ -1,0 +1,11 @@
+button {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #fca311;
+  margin-right: 8px;
+  margin-bottom: 8px;
+
+  &:hover {
+    background-color: #fcbf49;
+  }
+}

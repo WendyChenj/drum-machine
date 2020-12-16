@@ -4,7 +4,9 @@ import './App.scss';
 
 function App() {
   return (
-    <DrumPads />
+    <div id='container'>
+      <DrumPads />
+    </div>
   );
 }
 

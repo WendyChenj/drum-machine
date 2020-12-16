@@ -1,0 +1,23 @@
+@import "../../base";
+
+div#drum-machine {
+  padding: $padding;
+
+  p#display {
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px #e5e5e5;
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 1.25rem;
+  }
+
+  div#pads-group {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}

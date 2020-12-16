@@ -1,4 +1,5 @@
 import React from 'react';
+import './DrumPad.scss';
 
 const DrumPad = ({ drum, padClick }) => {
   const buttonId = `drum-pad-${drum.text}`;

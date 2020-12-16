@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import DrumPad from './DrumPad';
 import drumEles from '../drumEles';
+import './DrumPads.scss';
 
 const DrumPads = () => {
   const [drumText, setDrumText] = useState("Welcome to play!");
@@ -27,9 +28,11 @@ const DrumPads = () => {
   }
 
   return (
-    <div id="drum-machine" onKeyDown={pressDrumKey}>
+    <div id="drum-machine">
       <p id="display">{drumText}</p>
-      {drumEles.map( (ele) => <DrumPad drum={ele} padClick={(event) => clickPadHandler(event, ele.text)} />)}
+      <div id="pads-group">
+        {drumEles.map( (ele) => <DrumPad drum={ele} key={ele.text} padClick={(event) => clickPadHandler(event, ele.text)} />)}
+      </div>
     </div>
   );
 
