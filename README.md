@@ -1,6 +1,6 @@
 # Drum Machine
 
-Project 3 of Front End Libraries from freeCodeCamp.
+Project 3 from freeCodeCamp.
 
 This project is built using React, HTML and SCSS.
 
